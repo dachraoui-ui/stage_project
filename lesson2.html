@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="alllessons.css">
+   <link rel="shortcut icon" href="lesson.png" type="image/x-icon">
+   <title>Leçon 2</title>
+</head>
+<body>
+   <nav>
+      <a id="home" href="programming_basics.html">Accueil</a>
+      <a id="lessons" href="lessons.html">Leçons</a>
+      <a id="tds" href="tds.html">TDs</a>
+   </nav>
+   <header>
+      <aside class="left">
+         <div class="dropdown">
+            <a href="lessons.html">Leçon</a>
+            <div class="dropdown-content">
+              <a href="lesson1.html">lesson1</a>
+              <a href="lesson2.html">lesson2</a>
+              <a href="lesson3.html">lesson3</a>
+              <a href="lesson4.html">lesson4</a>
+              <a href="lesson5.html">lesson5</a>
+              <a href="lesson6.html">lesson6</a>
+              <a href="lesson7.html">lesson7</a>
+              <a href="lesson8.html">lesson8</a>
+            </div>
+         </div>
+      </aside>
+      <aside class="right">
+         <div class="dropdown">
+            <a href="tds.html">TD</a>
+            <div class="dropdown-content">
+              <a href="td1.html">TD 1</a>
+              <a href="td2.html">TD 2</a>
+              <a href="td3.html">TD 3</a>
+              <a href="td4.html">TD 4</a>
+              <a href="td5.html">TD 5</a>
+              <a href="td6.html">TD 6</a>
+              <a href="td7.html">TD 7</a>
+              <a href="td8.html">TD 8</a>
+            </div>
+          </div>
+      </aside>
+   </header>
+   <article>
+      <h1 id="animeted-text">Chapitre 2 : Eléments de base d’un algorithme</h1>
+      <h2>I. Notion d'objet algorithmique</h2>
+    <h2>1.1. Définition :</h2>
+    <p>Pour chaque algorithme, on a besoin de données pour fournir des résultats. Données et résultats 
+      sont appelés des objets algorithmiques. On distingue :</p>
+      <ul>
+         <li>Les objets en entrée (saisis ou mémorisés) : ce sont les données fournies à l'algorithme.
+         </li>
+         <li>Les objets en sortie : ce sont les résultats produits par l'algorithme.</li>
+         <li>Les objets internes ou intermédiaires (locaux) : ce sont les objets de manœuvre de l'algorithme 
+            servant aux manipulations internes (ex. compteurs, objets intermédiaires de stockage).</li>
+      </ul>
+      <span>Exemple :</span>
+    <p>: On se propose de permuter le contenu de deux objets A et B. Pour ce faire, on aura besoin 
+      des objets A et B en entrée et d'un troisième objet intermédiaire C puis on procédera comme suit :
+      On met le contenu de A dans C, puis le contenu de B dans A et enfin le contenu de C dans B.
+      Les objets A et B serviront aussi pour objets de sortie.</p>
+    <h2>1.2. Caractérisation d’un objet algorithmique</h2>
+    <p>Les objets algorithmiques, traités par l’ordinateur, sont stockés dans des cases mémoires dont la 
+      gestion est prise en charge par l’ordinateur. En mémoire, les cases sont reconnues à l’aide de leurs 
+      adresses, on parle d’adresse mémoire. Pour définir un objet algorithmique, on doit préciser son nom, 
+      son sens, son type, son utilisation et sa nature.</p>
+      <h2>I.2.1. Nom :</h2>
+       <p> Il sert à désigner l'objet dans l'algorithme, il est représenté par une chaîne de caractères 
+         alphanumériques qui commence obligatoirement par un caractère alphabétique. Dans la mesure du 
+         possible, ce nom doit être significatif, on l'appelle aussi identificateur.</p>
+         <span>NB :</span>
+        <p>l'identificateur d'un objet algorithmique ne doit pas contenir le caractère Espace.</p>
+        <h2>I.2.2. Sens :</h2>
+         <p>C'est la signification d'un objet, son rôle, son utilisation dans le problème.</p> 
+          <span>Ex :</span><p>Soit Masse_Corps la masse d'un corps en kilogrammes.
+         </p>
+         <h2>I.2.3. Type :</h2>  
+      <p>Le type d'un objet caractérise les valeurs que peut prendre cet objet. On distingue les 
+         types simples et les types structurés (composés). Un objet de type simple contient une seule 
+         information, tandis qu'un objet de type structuré contient une collection d'informations réparties en 
+         plusieurs champs, accessibles individuellement ou collectivement.
+      </p>
+      <span>Exemples</span>
+      <ul>
+         <li><span>Type simple</span>: Entier, Réel, Caractère,...</li>
+         <li><span>Type structuré (composé) homogène :</span>: Un tableau d'entiers.</li>
+         <li><span>Type structuré hétérogène :</span>Un enregistrement Etudiant contenant : Le numéro de la carte 
+            d'étudiant de type entier, et le nom et le prénom de type chaîne de caractères.
+            </li>
+      </ul>
+      <h2>I.2.4. Utilisation :</h2>
+      <p>Il s'agit de préciser si un objet est en entrée (E), en sortie (S) ou interne (I).</p>
+      <h2>I.2.5. Nature :</h2>
+      <p>Il s'agit de préciser si un objet est une constante (Const) ou une variable (Var).</p>
+      <span>Exemple</span>
+      <p>
+         On se propose de représenter les objets algorithmiques utilisés dans un problème de résolution d'une 
+         équation du premier degré à une seule inconnue. Soit l'équation de la forme : ax + b = 0.
+         Pour ce faire, on va dresser le tableau suivant :</p> 
+      <table border="3">
+         <tr class="grey">
+            <td>Nom</td>
+            <td>Sens</td>
+            <td>Type</td>
+            <td>Utilisation</td>
+            <td>Nature</td>
+         </tr>
+         <tr>
+            <td>a</td>
+            <td>Premier coefficient de l'équation </td>
+            <td>Réel (non nul)</td>
+            <td>E</td>
+            <td>Var</td>
+         </tr>
+         <tr>
+         <td>b</td>
+         <td>Deuxième coefficient de l'équation</td>
+         <td>Réel </td>
+         <td>E </td>
+         <td>Var</td>
+         </tr>
+         <tr>
+            <td>x</td>
+            <td>Solution de l'équation</td>
+            <td>Réel</td>
+            <td>S</td>
+            <td>Var</td>
+         </tr>
+      </table>
+      <h2>II. Structure générale d’un algorithme</h2>
+      <p>Un algorithme est une suite finie et ordonnée d’instructions, écrites dans un langage de 
+         programmation abstrait non compréhensible par la machine, afin de résoudre un problème. Il devrait 
+         être exprimé par la suite dans un langage de programmation concret (évolué), traduit en langage 
+         machine puis exécuté afin d’aboutir aux résultats effectifs.</p>
+      <h2>II.1. Partie déclarative :</h2>
+      <p>Avant d'utiliser n'importe quel objet algorithmique, il faut le déclarer au niveau de la partie déclarative 
+         de l'algorithme. Ces objets peuvent être de deux natures à savoir : constante ou variable. Dans ce qui 
+         suit, on va décrire la partie déclarative relative à un algorithme qui est composée de trois parties pas 
+         nécessairement toutes présentes :
+         </p>
+      <h2>II.1.1. Définition des constantes : </h2>
+      <p>Il s'agit de la première rubrique de la partie déclarative qui sert à définir les constantes utilisées 
+         dans l'algorithme. Une constante est une donnée dont la valeur reste fixe durant toute la durée de 
+         l’exécution d’un algorithme.
+         </p>
+      <h2>II.1.2. Définition des types :</h2>
+      <p>: C'est la 2
+         ème rubrique qui sert à définir les types non standards.</p>
+      <h2>II.1.3. Définition des variables :</h2> 
+      <p>C'est la troisième rubrique de la partie déclarative qui sert à déclarer les différentes variables
+         utilisées dans l'algorithme.
+         </p> 
+         <h2>II.2. Corps de l’algorithme</h2> 
+         <p>Cette partie de l’algorithme contient l’ensemble des instructions applicables sur l’ensemble des objets 
+            algorithmiques déjà déclarés au niveau de la partie précédente (déclarative). Ces instructions se 
+            divisent en essentiellement en trois catégories :
+            </p>
+            <ul>
+               <li>Les instructions simples : Entrée de données, sortie de résultats, affectation.</li>
+               <li>Les structures décisionnelles (conditionnelles ou alternatives) : Ce sont des structures de contrôle 
+                  permettant de choisir entre les traitements.</li>
+               <li>Les structures itératives (répétitives) : Ce sont des structures de contrôle permettant de répéter un 
+                  ensemble de traitement autant de fois qu’il est nécessaire.</li>   
+            </ul>
+            <h2>III. Structures de données simples :</h2>
+            <h2>III.1. Types numériques :</h2>
+            <p>Ils représentent les types Entier et Réel. En algorithmique, le type Entier représente l’ensemble Z et 
+               le type Réel l’ensemble R. Les entiers varient entre –32767 et 32768 et les réels entre –1E38 à 1E38.
+               On peut définir ainsi des constantes numériques de type Entier ou Réel (5, 100 ou 30.5, 50.9).ou bien 
+               des variables numériques se rapportant à ces deux types. En effet, ces variables sont des objets dont 
+               le contenu est modifiable au cours d’une exécution. Les deux types sont manipulés à travers les 
+               opérations arithmétiques suivantes :</p>
+            <ul>
+               <li><span>L’addition :</span>notée +, assure la somme de valeurs numériques.</li>
+               <li><span>La soustraction : </span> notée -, assure la différence entre des valeurs numériques.</li>
+               <li><span>La multiplication :</span> notée *, assure le produit entre des valeurs numériques.
+               </li>
+               <li><span> notée /, assure la division réelle des valeurs numériques.
+               </span></li>
+               <li><span>notée DIV, elle retourne la partie entière d’une division euclidienne (entière).</span></li>
+               <li><span>notée MOD, elle retourne le reste de la division entière.
+               </span></li>
+            </ul>  
+            <p>La priorité définie pour ces opérations est la suivante :</p> 
+            <ol>
+               <li><span> ( ) </span>: les valeurs placées entre parenthèses sont toujours évaluées en premier.</li>
+               <li><span> *, /, DIV, MOD</span> la multiplication et la division, la division entière, et le modulo (reste de la 
+                  division entière) s’effectuent en deuxième lieu.</li>
+               <li><span> +, -</span> l’addition et la soustraction s’effectuent en dernier lieu.</li>
+            </ol>
+            <p>Les comparaisons se font à l’aide des opérateurs de comparaison qui sont : , =, <, >, , 
+            </p>
+            <h2>III.2. Type Caractère :</h2>
+            <p>C’est l’ensemble des caractères imprimables et non imprimables représentés entre deux 
+               apostrophes. On distingue plusieurs types de caractères :</p>
+            <ul>
+               <li>Les lettres alphabétiques (minuscules 'a'..'z' et majuscules 'A'..'Z').</li>
+               <li>Les chiffres ('0'..'9').
+               </li>
+               <li>Les signes de ponctuation et les symboles ('.', ':', '!', '&', '@', '[',…).</li>
+               <li>Les caractères nom imprimables (Escape, Return, Shift, Suppr…).
+               </li>
+            </ul>
+            <p>Tous ces caractères sont ordonnés selon leurs codes ASCII (Americain Standard Code for Information 
+               Interchange) variant de 0 à 255.</p>
+               <p>Les opérations prédéfinies relatives au type caractère sont les suivantes :</p>
+               <ul>
+                  <li><span>ASC(c) </span>: renvoie le code ASCII du caractère c.
+                  </li>
+                  <li><span>CHR(n) </span>: renvoie le caractère du code ASCII n.</li>
+                  <li><span>SUCC(c) / PRED(c)</span>: renvoie le caractère successeur/prédécesseur de c.
+                  </li>
+                  <li><span>MAJUS(c) / MINUS(c) </span>: convertit le caractère c en majuscule/minuscule.</li>
+               </ul>
+                  <span>Exemples :</span>
+                  <ul>
+                     <li>ASC("7")=55, ASC("'")=39, ASC("\")=92</li>
+                     <li>CHR(55)="7", CHR(39)="'", CHR(92)="\"</li>
+                  </ul>
+                  <h2>III.3. Type booléen ou logique :</h2>
+                  <p>C’est une information qui peut avoir que la valeur Vrai ou Faux. Les opérateurs booléens sont :
+                  </p>
+                  <ul>
+                     <li><span>Unaire :</span> NON (négation)
+                     </li>
+                     <li><span>Binaire :</span>ET : conjonction logique, OU : disjonction.</li>
+                  </ul>
+                  <p>La priorité est définie comme suit : NON, ET, OU/OUex (de même priorité)
+                  </p>
+                  <span>Propriétés</span>
+                  <ul>
+                     <li><span>Commutativité :</span>Soient P et Q deux variable logiques, on a :</li>
+                     <ul>
+                        <li>P et Q = Q et P</li>
+                        <li>P ou Q = Q ou P</li>
+                     </ul>
+                     <li><span>Associativité :</span>Soient P, Q et R trois variables booléennes, on a :</li>
+                     <ul>
+                        <li>P et (Q ou R) = (P et Q) ou (P et R)</li>
+                        <li>P ou (Q et R) = (P ou Q) et (P ou R)</li>
+                     </ul>
+                     <li><span>Théorème de Morgan :</span>Soient P et Q deux variable logiques, on a :</li>
+                     <ul>
+                        <li>Non (P et Q) = Non P ou Non Q</li>
+                        <li>Non (P ou Q) = Non P et Non Q
+                        </li>
+                     </ul>
+               </ul>
+               <h2>III.4. Type scalaire énuméré :</h2>
+               <p>Le type scalaire par énumération définit un ensemble ordonné de valeurs désignées par des 
+                     identificateurs. Ce genre de type doit être défini dans partie déclarative Type.</p>
+               <span>Exemple</span>
+               <p><span>SEMAINE =</span>  {lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche}.
+                        NB : Une variable jour de type Semaine peut prendre comme valeur : lundi, mardi, mercredi, jeudi, 
+                        vendredi, samedi ou dimanche.
+               </p>
+               <p>Les opérateurs applicables à ces valeurs sont : les opérateurs de relations et les opérateurs PRED, 
+                           SUCC et ORD.</p>
+               <h2>III.5. Type intervalle :</h2>
+               <p>Le type intervalle possède les propriétés d’un type scalaire discret ordonné (Entier, Caractère et 
+                              Scalaire énuméré). La définition d’un intervalle est décrite par la donnée de deux constantes Borne
+                              Inférieure et Borne Supérieure appartenant à un type scalaire discret ordonné et tel que Borne
+                              Inférieure ≤ Borne Supérieure.
+               </p>
+               <span>Exemples</span>
+               <h3>Type</h3>
+               <p>mois : 1..12 -- cette déclaration est beaucoup plus précise que mois : Entier</p>
+               <p>Jour_Ouvrable = lundi..samedi</p>
+               <h3>Variable</h3>
+               <p>j : Jour_Ouvrable </p>
+               <h2>IV. Instructions élémentaires :</h2>
+               <p>On les appelle aussi les actions simples qui sont au nombre de trois :
+               </p>
+               <h2>IV.1. Instruction d’affectation
+               </h2>
+               <p>Il s'agit d'une instruction de base dans un algorithme. Pour pouvoir utiliser un objet dans un 
+                  algorithme, il faut lui attribuer un nom qui correspond à une case en mémoire : C'est l'action de 
+                  déclaration d'un objet. Les déclarations seront toujours placées avant le début de l'algorithme. Après 
+                  avoir déclaré un objet, il faut pouvoir y ranger une valeur : C'est l'action d'affectation notée par : "<==". 
+                  Deux notions sont importantes à définir à ce niveau et qui sont les notions de valeur et de variable.
+               </p>
+               <ul>
+                  <li><span>Notion de valeur :</span>c'est une quantité qui a une existence propre et qui est attribuable à un objet.</li>
+                  <li><span>Notion de variable :</span>une variable est caractérisée par son nom, son sens, son type et son 
+                     utilisation. On utilise des variables dans les traitements algorithmiques et ceci en leur affectant
+                     des valeurs ayant pour type le même que celui de la variable.
+                     </li>
+               </ul>
+               <p>Ainsi l'affectation se définit comme étant l'attribution d'une valeur à une variable.à</p>
+               <p>On peut alors dire qu'une instruction d'affectation a un double rôle :</p>
+               <ul>
+                  <li>Elle détermine la valeur de l'expression (expression) située à droite du symbole <==.</li>
+                  <li>Elle range le résultat dans la variable (nom_variable) située à gauche.</li>
+               </ul>
+               <span>Exemple</span>
+               <p>Le tableau ci-contre montre les valeurs de A et B après 
+                  l'exécution de chacune des instructions mentionnées.
+               </p>
+               <span>Remarque :</span>
+               <p> Après l'exécution de (1) la variable B n'avait 
+                  pas encore reçu de valeur. On dit qu'une telle variable 
+                  est Indéfinie ou Non définie.
+               </p>
+               <p>Lorsqu'une variable apparaît au niveau de la partie droite d'une affectation, c'est que l'on suppose 
+                  qu'elle contient une valeur. Cette valeur devra lui avoir été affectée : Il s'agit alors de l'action 
+                  d'initialisation.</p>
+               <span>Exemples :</span>
+               <ul>
+                  <li>A <== 3  -- Initialisation.</li>
+                  <li>B <== 4  -- Initialisation.</li>
+                  <li>C <== A * 3 + 4 - B  -- Affectation de la valeur d'une expression (ceci suppose l'évaluation
+                      de l'expression en respectant les règles de priorité des opérateurs).
+                     </li>
+               </ul>
+               <span>Remarques :</span>
+               <ul>
+                  <li>Tout objet utilisé dans un algorithme doit être déclaré une et une seule fois.</li>
+                  <li>L'action d'affectation pourra s'effectuer plusieurs fois dans l'algorithme, la valeur de l'objet sera 
+                     alors modifiée à chaque affectation.
+                  </li>
+               </ul>
+               <h2>IV.2. Instruction d’écriture :</h2>
+               <p>Cette instruction est nommée aussi Sortie, elle permet de communiquer ou visualiser les résultats. 
+                  La forme générale de l'instruction d'écriture est la suivante :</p>
+               <h3>Exemple :</h3>
+               <h3>Algorithme Ecriture</h3>
+               <h3>Constante
+               </h3>
+               <p>a : = 3 -- déclarer une constante a de type Entier (a=3)
+               </p>
+               <h3>Variable</h3>
+               <p>x, y, z : Entier -- déclarer trois variables x, y et z de type Entier</p>
+               <h3>Début</h3>
+               <p>x <== a -- affecter à la variable x la valeur de la constante a</p>
+               <p>y <== 15 -- affecter à la variable y la valeur 15
+               </p>
+               <p>z <== x+y -- affecter à la variable z la somme de x et y
+               </p>
+               <p>Ecrire (x, y) -- écrire les valeurs de x et y sur la même ligne</p>
+               <p>Ecrire ("la valeur de z est : ", z) -- écrire la valeur de z sur la ligne suivante.
+               </p>
+               <h3>Fin</h3>
+               <p>Cet algorithme (Ecriture) fournira ces résultats : 3     15 la valeur de z est : 18</p>
+               <span>Remarque :</span>
+               <p>les textes qui accompagnent les résultats s'appellent des libellés. Pour les obtenir, il 
+                  suffit de faire apparaître ces libellés dans la liste des informations à écrire. Plus précisément, ces 
+                  libellés devront être placés entre guillemets ("libellé"). </p>
+
+               
+   <script>
+      const text = document.getElementById("animeted-text");
+      const textArray = text.innerHTML.split("");
+      text.innerHTML = "";
+      textArray.forEach((letter, i) => {
+        setTimeout(() => {
+          text.innerHTML += letter;
+        }, 75 * i);
+      });
+        </script>
+</body>
+</html>

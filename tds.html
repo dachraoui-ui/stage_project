@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TDs</title>
+   <link rel="shortcut icon" href="learning.png" type="image/x-icon">
+   <style>
+      *{
+   text-align: center;
+   border-radius: 20px;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      #TDs-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    h1{
+   border: 2px solid white;
+   margin-left: 600px; 
+   margin-right: 600px;
+   box-shadow:  3px 3px 3px 0px blue;
+   background-color:lightblue;
+   opacity: 0.9;        
+      }
+    .TD {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+      border-radius: 10px;
+      text-align: center;
+      line-height: 200px;
+      font-size: 20px;
+      color: black;
+      margin: 20px;
+      transition: 0.5s;
+      border: 2px solid white;
+      opacity:0.9;
+      font-weight: bold;
+    }
+
+    .TD:hover {
+      background-color: blue;
+      cursor: pointer;
+      box-shadow:  3px 3px 3px 0px blue;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    body{
+   background-image: url(tds.jpg);
+   background-size: cover;
+   background-repeat:no-repeat;
+    }
+    footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   margin-top:70px;
+   gap:400px;  
+}
+.suivant{
+   transition: all 0.5s;
+}
+ /* this for the right buttuon with an animation*/
+.précendent{
+   transition: all 0.5s;
+}
+.home{
+   transition: all 0.5s;
+}
+.précendent:hover{
+   transform:translateX(-30px)
+}
+.home:hover{
+   transform:translateY(-30px);
+}
+.suivant:hover{
+   transform:translateX(30px);
+}
+.home img{
+   width: 50px;
+}
+   </style>
+</head>
+<body>
+   <h1>TDs</h1>
+   <div id="TDs-container">
+      <div class="TD"><a href="td1.html"> TD 1</a></div>
+      <div class="TD"><a href="td2.html"> TD 2</a></div>
+      <div class="TD"><a href="td3.html"> TD 3</a></div>
+      <div class="TD"><a href="td4.html"> TD 4</a></div>
+      <div class="TD"><a href="td5.html"> TD 5</a></div>
+      <div class="TD"><a href="td6.html"> TD 6</a></div>
+      <div class="TD"><a href="td7.html"> TD 7</a></div>
+      <div class="TD"><a href="td8.html"> TD 8</a></div>
+  </div>
+  <footer>
+      <a class="précendent" href="lessons.html"><img src="left1.png" alt="left"></a>
+      <a class="home" href="programming_basics.html"><img src="home1.png" alt="home"></a>
+      <a class="suivant" href="td1.html"><img src="right1.png" alt="right"></a>
+  </footer>
+</div>  
+</body>
+</html>

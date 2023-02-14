@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Programming_basics</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="shortcut icon" href="icon1.png" type="image/x-icon">
+</head>
+<body>
+  <nav>
+    <a href="programming_basics.html"><span id="home">Accueil</span></a>
+    <a href="lessons.html"><span id="lesson">Leçons</span></a>
+    <a href="tds.html"><span id="td">TDs</span></a>
+  </nav>
+<main>
+   <h1 id="animated-text" >Bienvenue sur notre site de programmation</h1>
+   <p>Ici, vous trouverez des leçons et des exercices sur les différents sujets de programmation.</p>
+ </main>
+<article>
+  <div class="pargraph_1"><li><ul> Sur notre site web, où vous pouvez apprendre les bases de la programmation
+     et des algorithmes en français. Notre site est conçu pour ceux qui débutent dans la programmation et 
+     souhaitent apprendre les concepts fondamentaux de manière claire et concise. Nous proposons une 
+     variété de leçons et d'exercices pour vous aider à pratiquer vos 
+     compétences et à devenir compétent en programmation.
+    </ul></li>
+    </div>
+  <div class="pargraph_2">
+    Notre site couvre des sujets tels que les boucles, les variables et les structures de données,
+    qui sont des éléments de base essentiels pour tout programmeur. Nos leçons sont conçues pour 
+    être interactives et captivantes, ce qui facilite votre apprentissage et votre mémorisation 
+    des informations. De plus, nos exercices et quiz vous aideront à tester votre compréhension
+    et à appliquer vos connaissances dans des scénarios réels. Que vous soyez débutant ou que
+    vous souhaitiez actualiser vos compétences, notre site a quelque chose pour tout le monde.
+</article>
+<hr>
+<footer>
+  <a href="contact">contact</a>
+  <a href="about_us">à Propos de Nous</a>
+</footer>
+<div class="image">
+  <a href="http://www.isetr.rnu.tn"><img src="iset.png" alt="iset"></a>
+  <div class="thank">
+    *Merci à Mme Hind Eloudi pour les cours*
+  </div>
+</div>
+ <script>
+const text = document.getElementById("animated-text");
+const textArray = text.innerHTML.split("");
+text.innerHTML = "";
+textArray.forEach((letter, i) => {
+  setTimeout(() => {
+    text.innerHTML += letter;
+  }, 85 * i);
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="alllessons.css">
+   <link rel="shortcut icon" href="lesson.png" type="image/x-icon">
+   <title>Leçon 3</title>
+</head>
+<body>
+   <nav>
+      <a id="home" href="programming_basics.html">Accueil</a>
+      <a id="lessons" href="lessons.html">Leçons</a>
+      <a id="tds" href="tds.html">TDs</a>
+   </nav>
+<header>
+   <aside class="left">
+      <div class="dropdown">
+         <a href="lessons.html">Leçon</a>
+         <div class="dropdown-content">
+           <a href="lesson1.html">lesson1</a>
+           <a href="lesson2.html">lesson2</a>
+           <a href="lesson3.html">lesson3</a>
+           <a href="lesson4.html">lesson4</a>
+           <a href="lesson5.html">lesson5</a>
+           <a href="lesson6.html">lesson6</a>
+           <a href="lesson7.html">lesson7</a>
+           <a href="lesson8.html">lesson8</a>
+         </div>
+      </div>
+   </aside>
+   <aside class="right">
+      <div class="dropdown">
+         <a href="tds.html">TD</a>
+         <div class="dropdown-content">
+           <a href="td1.html">TD 1</a>
+           <a href="td2.html">TD 2</a>
+           <a href="td3.html">TD 3</a>
+           <a href="td4.html">TD 4</a>
+           <a href="td5.html">TD 5</a>
+           <a href="td6.html">TD 6</a>
+           <a href="td7.html">TD 7</a>
+           <a href="td8.html">TD 8</a>
+         </div>
+       </div>
+   </aside>
+</header>
+   <article>
+      <h1 id="animeted-text">Chapitre 3 : Structures alternatives (décisionnelles)
+      </h1>
+      <h2>I. Introduction</h2>
+    <h2>I.1. Exemple introductif :</h2>
+    <p>Souvent, on est confronté à des situations où il faut faire un choix en se basant sur des critères qui 
+      sont exprimés par des conditions. Cette notion est exprimée par les structures décisionnelles ou 
+      conditionnelles. Voici dans ce qui suit un exemple qui explique cette notion.</p>
+      <span>Exemple :</span>
+    <p>On se propose de déterminer les différents résultats relatifs aux moyennes des étudiants d’une 
+      institution. Pour ce faire, il faut avoir la moyenne déjà calculée puis la faire passer à travers des filtres 
+      ou ce qu’on appelle tests ou encore conditions. Si elle vérifie l’une des conditions, la mention 
+      correspondante sera communiquée. Les filtres à exprimer sont les suivants :
+   </p>
+   <ul>
+      <li>Si (moyenne >= 0) et (moyenne < 10) Alors le résultat est : Redouble.</li>
+      <li>Si (moyenne >= 10) et (moyenne < 12) Alors le résultat est : Admis Passable.
+      </li>
+      <li>Si (moyenne >= 12) et (moyenne < 14) Alors le résultat est : Admis Assez Bien.
+      </li>
+      <li>Si (moyenne >= 14) et (moyenne < 16) Alors le résultat est : Admis Bien.</li>
+      <li>Si (moyenne >= 16) et (moyenne <= 20) Alors le résultat est : Admis Très Bien.
+      </li>
+      <li>Si (moyenne > 20) ou (moyenne < 0) Alors le résultat est : Moyenne invalide.</li>
+   </ul>
+   <p>L’évaluation de chacune des conditions donne deux valeurs possibles, Vrai ou Faux, c’est une valeur 
+      logique. Si la condition a la valeur Vrai, le traitement qui suit est alors effectué. </p>
+      <h2>I.2. Définition de choix :</h2>
+      <p>On a vu, jusqu'ici, qu'on peut souvent rencontrer des situations qui ne peuvent pas être traitées par 
+         les seules séquences utilisant les instructions de base. En effet, on a besoin parfois de choisir entre 
+         deux ou plusieurs traitements selon la réalisation ou non d'une certaine condition, d'où la notion de 
+         traitement conditionnel. On peut distinguer trois structures de traitement conditionnel :</p>
+
+      <ul>
+         <li><p> Une structure conditionnelle simple : dans laquelle on a à choisir entre deux traitements au plus. 
+            On distingue deux structures conditionnelles simples :</p> </li>
+            <ul>
+               <li>Une structure conditionnelle à un seul choix (structure simple réduite)</li>
+               <li>Une structure conditionnelle à deux choix (structure simple complète).
+               </li>
+            </ul>
+         <li><p>Une structure conditionnelle à plusieurs choix (structure généralisée) : dans laquelle on a la 
+            possibilité de choisir un traitement parmi plusieurs.
+            </p></li>
+      </ul>
+      <h2>II. Structures alternatives simples :</h2>
+      <h2>II.1. structure conditionnelle à un seul choix :</h2>
+      <p>La structure conditionnelle à un seul choix se présente comme suit :</p>
+      <h2>II.2. Structure alternative à deux choix :</h2> 
+      <p>La structure conditionnelle à deux choix se présente comme suit :
+      </p>
+       <span>Remarque :</span>
+      <p>
+         Si l'expression logique mentionnée après le mot Si, a la valeur logique Vrai, on exécute ce qui figure 
+         après le mot Alors ; si l'expression logique a la valeur logique Faux, on exécute ce qui figure après le 
+         mot Sinon.
+      </p> 
+         <span>Exemple :</span>
+         <p>L’algorithme suivant permet de lire un nombre entier, puis de vérifier s'il est pair ou impair.</p>
+         <ul>
+            <li>Déclarer deux variables de type entier : une pour recevoir un nombre à partir du clavier, l'autre 
+               pour recevoir le reste de la division entière par 2.</li>
+            <li>Calculer, à l'aide de la fonction Mod, le reste de la division entière du nombre par 2.</li>
+            <li>Tester pour voir si le reste est égal à 0, dans ce cas le nombre est pair ; dans le cas contraire le 
+               nombre est impair.</li>
+         </ul>
+         <h3>Algorithme Pair_Impair :</h3>
+         <h3>Variable</h3>
+         <p>nombre, reste : Entier</p>
+            <h3>Début</h3>
+            <p>Ecrire ("Donnez un nombre entier : ")</p>
+            <p>Lire (nombre)</p>
+            <p>reste <== nombre Mod 2</p>
+            <p><span>Si</span> (reste = 0) -- ou bien Si (nombre Mod 2 = 0)</p>
+            <p><span>Alors</span>Ecrire ("Le nombre ", nombre, " est pair")</p>
+            <p><span>Sinon</span>Ecrire ("Le nombre ", nombre, " est impair")</p>
+            <h3>FinSi</h3>
+            <h3>Fin</h3>
+      <h2>III. Structures alternatives à choix multiples :</h2>
+      <h2>III.1. Structures alternatives imbriquées :</h2>
+      <p>Les structures conditionnelles imbriquées (ou emboitées) se présentent comme suit :</p>
+   <!-- ?? -->
+   <span>Exemple :</span>
+   <p><span>Calcul de remise :</span>A partir d'un montant lu en donnée, on détermine un montant net par application 
+      d'une remise de :</p>
+      <ul>
+         <li>5% si le montant est compris entre 2000 DT (inclus) et 5000 DT (inclus).</li>
+         <li>10% si le montant est supérieur ou égal à 5000 DT.</li>
+      </ul>
+      <span>Analyse :</span>
+      <ul>
+         <li>Déclarer trois variables (Montant, Taux et Remise) de type numérique.</li>
+         <li>Lire le montant à partir du clavier.</li>
+         <li>Tester pour voir si le montant introduit par l'utilisateur est inférieur ou égal à 2000 DT, dans ce 
+            cas affecter à Taux la valeur 0 ; dans le cas contraire tester pour voir si le montant est inférieur 
+            à 5000 DT. Si cette dernière condition est vérifiée, affecter à Taux la valeur 5 sinon la valeur 10.
+         </li>
+         <li>Calculer le montant de remise</li>
+         <li>Affecter à Montant le montant net.</li>
+      </ul>
+      <h3>Algorithme Calcul-remise-Version1</h3>
+      <span>Variable</span>
+      <p>Montant, Remise : Réel</p>
+      <p>Taux : Entier</p>
+      <h3>Début</h3>
+      <p>Ecrire ("Montant ? (en Dinars) :")</p>
+      <p>Lire (Montant)
+      </p>
+      <p>Si (Montant < 2000)</p>
+      <p>Alors Taux <== 0</p>
+      <p>Sinon Si (Montant <= 5000)</p>
+      <p>Alors Taux <== 5</p>
+      <p>Sinon Taux <== 10</p>
+      <p>FinSi</p>
+      <p>FinSi</p>
+      <p>Remise <== Montant * Taux / 100</p>
+      <p>Montant <== Montant – Remise</p>
+      <p>Ecrire ("Montant Net :", Montant)</p>
+      <h3>Fin</h3>
+      <span>Remarque :</span>
+      <p>Notez que beaucoup d'autres formulations sont possibles. Ainsi, par exemple, on peut éviter l'emploi 
+         de choix imbriqués en utilisant trois structures conditionnelles simples :</p>
+      <p><span>si</span>(Montant < 2000)</p>
+      <p><span>Alors</span>Taux <== 0</p>
+      <span>FinSi</span>
+      <p><span>Si </span>(Montant >= 2000) Et (Montant <= 5000)</p>
+      <p><span>Alors </span>Taux <== 5</p>
+      <span>FinSi</span>
+      <p><span>si </span> (Montant > 5000)</p>
+      <p><span>Alors</span> Taux <== 10 </p>
+      <span>FinSi</span>
+      <h2>III.2. Structure Selon :</h2>
+      <p>La structure conditionnelle Selon est utilisée pour sélectionner une séquence possible d'instructions 
+         parmi plusieurs. Elle ressemble à la structure Si...Alors...Sinon, mais elle est plus efficace lorsqu'il 
+         s'agit de tester la même variable plusieurs fois pour des valeurs fixes. Sa forme se présente de la 
+      manière suivante :</p>
+      <!-- ?? -->
+      <ul>
+         <li><span> Sélecteur :</span>est un identificateur de variable ou une expression de type scalaire.</li>
+         <li><span>Liste_valeurs1..Liste_valeursN :</span>ce sont des valeurs servant aux tests. Elles peuvent être 
+            données sous forme de constantes et/ou d'intervalles constants de type compatible avec le 
+            sélecteur.
+         </li>
+         <li><span> Liste_Valeurs1</span> (exemple 1 : 1..10 / exemple 2 : 1,3,5,7,9 / exemple 3 : 1..10, 20..30)</li>
+         <li> [...] : bloc facultatif.</li>
+      </ul>
+      <h3>Remarque :</h3>
+      <p>Si le contenu du sélecteur mentionné après le mot Selon correspond à une valeur parmi les listes des 
+      valeurs mentionnées après le mot Faire, on exécute toutes les instructions qui suivent cette valeur 
+      jusqu'à la liste de valeurs suivante. Si rien ne correspond, on exécute les instructions qui figurent 
+      après le mot Sinon. Puis l'algorithme sort de la structure et continue l'exécution après le mot 
+      FinSelon.</p>
+      <h3>Exemple 1</h3>
+      <p>et algorithme permet de saisir une date sous la forme jj, mm, aa et d'afficher le nombre de jours du 
+         mois mm et le nombre de jours qui restent pour la fin de ce mois.</p>
+      <h3>Analyse :</h3>
+      <ul>
+         <li>Déclarer 5 variables de type entier :</li>
+         <ul>
+            <li>3 variables (jj, mm et aa) pour recevoir la date.</li>
+            <li>1 variable (jtot) pour recevoir le nombre total de jours du mois mm.</li>
+            <li>1 variable (jreste) pour calculer le nombre de jours restant pour la fin du mois mm.</li>
+         </ul>
+         <li>Lire la date sous la forme demandée.</li>
+         <li> Sélectionner le bon mois.</li>
+         <li>Déterminer les valeurs des variables jtot et jreste en tenant compte des années bissextiles. Une 
+            année bissextile se dit de l’année de 366 jours sui revient généralement tous les 4 ans. </li>
+      </ul>
+         <h3>Algorithme Jours </h3>
+         <h3>Variable</h3>
+         <p>jj, mm, aa, jtot, jreste : Entier</p>
+         <h3>Début</h3>
+         <p>Ecrire ("Donnez la date sous la forme JJ MM AA : ")</p>
+         <p>Lire (jj, mm, aa) --on suppose que la date saisie par l'utilisateur est valide</p>
+         <p><span>Selon</span> mm Faire</p>
+         <p>1, 3, 5, 7, 8, 10, 12 : jtot <== 31 --Janvier, Mars, Mai, Juillet, Août, Oct., Déc.</p>
+         <p>4, 6, 9, 11 : jtot <== 30 --Avril, Juin, Sept. et Nov.</p>
+         <p><span>Sinon </span>:     --mois de Février</p>
+         <p>Si (aa Mod 4 = 0)        --année bissextile (février a 29 jours)
+         </p>
+         <p><span>Alors</span>jtot <== 29</p>
+         <p><span>Sinon </span>jtot <== 28</p>
+         <span>FinSi</span>
+         <p><span>FinSelon</span></p>
+         <p>jreste <== jtot – jj</p>
+         <p>Ecrire ("Le mois ", mm, " a ", jtot, " jours et il reste encore ", jreste, " jours pour sa fin")</p>
+         <span>Fin</span>
+
+      
+      
+      
+   </article>
+
+   <script>
+      const text = document.getElementById("animeted-text");
+      const textArray = text.innerHTML.split("");
+      text.innerHTML = "";
+      textArray.forEach((letter, i) => {
+        setTimeout(() => {
+          text.innerHTML += letter;
+        }, 90 * i);
+      });
+        </script>
+</body>
+</html>

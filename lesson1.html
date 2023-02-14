@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="alllessons.css">
+   <link rel="shortcut icon" href="lesson.png" type="image/x-icon">
+   <title>Leçon 1</title>
+</head>
+<body>
+   <nav>
+      <a id="home" href="programming_basics.html">Accueil</a>
+      <a id="lessons" href="lessons.html">Leçons</a>
+      <a id="tds" href="tds.html">TDs</a>
+   </nav>
+<header>
+   <aside class="left">
+      <div class="dropdown">
+         <a href="lessons.html">Leçon</a>
+         <div class="dropdown-content">
+           <a href="lesson1.html">lesson1</a>
+           <a href="lesson2.html">lesson2</a>
+           <a href="lesson3.html">lesson3</a>
+           <a href="lesson4.html">lesson4</a>
+           <a href="lesson5.html">lesson5</a>
+           <a href="lesson6.html">lesson6</a>
+           <a href="lesson7.html">lesson7</a>
+           <a href="lesson8.html">lesson8</a>
+         </div>
+      </div>
+   </aside>
+   <aside class="right">
+      <div class="dropdown">
+         <a href="tds.html">TD</a>
+         <div class="dropdown-content">
+           <a href="td1.html">TD 1</a>
+           <a href="td2.html">TD 2</a>
+           <a href="td3.html">TD 3</a>
+           <a href="td4.html">TD 4</a>
+           <a href="td5.html">TD 5</a>
+           <a href="td6.html">TD 6</a>
+           <a href="td7.html">TD 7</a>
+           <a href="td8.html">TD 8</a>
+         </div>
+       </div>
+   </aside>
+</header>
+   <article>
+      <h1 id="animeted-text">Chapitre 1 : Introduction générale</h1>
+      <h2>I. Notion d'algorithme :</h2>
+    <h2>I.1. Principe de résolution de problème :</h2>
+    <p>Dans la vie quotidienne, on est confronté à des problèmes de natures diverses pour lesquels on 
+      cherche des solutions. En effet, pour ce faire, on doit suivre une logique bien déterminée en se 
+      basant sur des faits réels ou données pour atteindre des solutions ou résultats. Cette logique peut 
+      être commune à un ensemble de problèmes ou ce qu'on appelle classe de problèmes.</p>
+    <p>L'illustration de cette logique de résolution est ce qu'on appelle algorithme. Le mot algorithme
+      revient à celui qui l'a inventé, il s'agit du mathématicien Al-Khawarizmi.</p>
+    <h2>I.2. Définitions :</h2>
+    <p>On peut attribuer plusieurs définitions à un algorithme, en voici dans ce qui suit quelque unes :</p>
+      <ul>
+         <li><p>Un algorithme est une succession d'opérations ou d'actions qui, exécutée sous un ordre défini
+            à l'avance, résout une classe donnée de problèmes. Ces actions ou opérations sont appelées 
+            aussi instructions.</p> </li>
+         <li><p>Un algorithme est un langage de programmation abstrait non destiné à la machine, mais il doit 
+            être traduit à n'importe quel langage de programmation concret afin d'aboutir à des résultats. 
+            L'algorithme est généralement indépendant du langage de programmation choisi</p> </li>
+         <li><p>Un algorithme, comme il est défini dans "Le petit Larousse" est une suite finie d'opérations 
+            élémentaires constituant un schéma de calcul ou de résolution d'un problème.</p> 
+            </li>
+      </ul>
+      <p>Un algorithme étant une suite ordonnée de directives réalisables composée d'actions et de 
+         décisions permettant de parvenir à la résolution d'un problème, La notion d'algorithmique est 
+         beaucoup plus importante : C'est l'art de spécification, d'analyse et de conception des actions 
+         d'une solution, suivies de l'écriture proprement dite de l'algorithme.</p>
+      <h2>I.3. Exemples :</h2> 
+      <p>Voici quelques exemples de problèmes qu'on peut résoudre à l'aide d'algorithmes :</p>
+      <ul>
+         <li><span>Exemple 1 :</span>Résolution des équations (du premier degré, du second degré,...).</li>
+         <li><span>Exemple 2 :</span>Calcul de la somme des termes d'une suite.</li>
+         <li><span>Exemple 3 :</span>Calcul des moyennes des étudiants dans une institution universitaire.</li>
+         <li><span>Exemple 4 :</span>Gestion de stock, gestion de bibliothèque, gestion de parc de voitures,…
+         </li>
+         <li><span>Exemple 5 :</span>Algorithmes de recherche d'un élément dans un ensemble d'éléments.</li>
+         <li><span>Exemple 6 :</span>Algorithmes de tri d'un ensemble d'éléments,…
+         </li>
+      </ul> 
+      <h2>II. Phases d'une activité de programmation:</h2>
+      <p>
+         En programmation, la première question à se poser est : Que doit faire mon programme ? Cela 
+         semble simple et évident, mais sans une approche claire et précise, même le meilleur programmeur 
+         peut échouer. Quand on apprend à programmer, il est important de bien réfléchir au problème à 
+         résoudre avant de s'asseoir devant un ordinateur. Une partie de cette phase de réflexion servira à 
+         créer une liste ordonnée d'étapes que nous avons appelé algorithme.</p> 
+         <figure>
+            
+            <img class="image1" src="cycle.png" alt="cycle_de_programmation">
+            <figcaption><span>Figure 1.1 :</span>Phases d’une activité de programmation</figcaption>
+         </figure>
+         <p>En réalité, la démarche de programmation se déroule en quatre phases :</p>
+         <h2>II.1. Analyse du problème :</h2>
+         <p>Dans cette première phase, on cherche par quel moyen, on pourra obtenir les résultats attendus à 
+            partir des données dont on dispose => Cette phase aboutit à l'écriture des algorithmes informels.</p>
+         <h2>II.2. Conception :</h2>
+         <p>Elle consiste à exprimer les algorithmes informels dans un langage de programmation abstrait. 
+            Pendant cette phase, on pourra aussi décomposer le problème en entités élémentaires faciles à 
+            implémenter et à tester. => Cette phase de conception aboutit à l'écriture des algorithmes formels.</p>
+         <h2>II.3. Implémentation (Codage) & Tests :</h2>
+         <p>Dans cette troisième phase, on exprime dans un langage de programmation concret (évolué), le 
+            résultat de la phase précédente. Si l'analyse et la conception ont été convenablement menées, cette 
+            opération se résume à une simple transcription systématique. Pendant cette phase, on vérifie 
+            également le bon fonctionnement des unités de programmation => Cette phase aboutit à l'écriture 
+            des unités de programmation (algorithmes codés).</p>
+            <h2>II.4. Maintenance :</h2>
+            <p>Pendant cette dernière phase, il pourrait être nécessaire de modifier le programme pour corriger 
+               les défauts, ou pour améliorer ses performances.</p>
+   </article>
+
+   <script>
+      const text = document.getElementById("animeted-text");
+      const textArray = text.innerHTML.split("");
+      text.innerHTML = "";
+      textArray.forEach((letter, i) => {
+        setTimeout(() => {
+          text.innerHTML += letter;
+        }, 75 * i);
+      });
+        </script>
+</body>
+</html>
+
+
